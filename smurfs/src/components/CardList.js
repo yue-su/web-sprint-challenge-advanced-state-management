@@ -16,7 +16,8 @@ const CardList = () => {
             {
                 smurfList.map(smurf => {
                     return (
-                      <Box
+                        <Box
+                        key={smurf.id}
                         m={1}
                         display="flex"
                         justifyContent="space-around"
