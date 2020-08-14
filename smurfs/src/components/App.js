@@ -6,10 +6,10 @@ import SmurfForm from './SmurfForm'
 const App = () => {
   return (
     <Box>
-      <Box>
+      <Box my={5}>
         <Typography variant='h2' align='center'>Smurfs Village</Typography>
       </Box>
-      <Box m={8}>
+      <Box mx={8}>
         <Grid container>
           <Grid item xs={6}>
             <CardList />
