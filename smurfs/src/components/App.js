@@ -1,16 +1,26 @@
-import React, { Component } from "react";
-import "./App.css";
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>SMURFS! W/Redux</h1>
-        <div>Welcome to your state management version of Smurfs!</div>
-        <div>Start inside of your `src/index.js` file!</div>
-        <div>Have fun!</div>
-      </div>
-    );
-  }
+import React from 'react'
+import {Box, Typography, Grid} from '@material-ui/core'
+import CardList from './CardList'
+import SmurfForm from './SmurfForm'
+
+const App = () => {
+  return (
+    <Box>
+      <Box my={5}>
+        <Typography variant='h2' align='center'>Smurfs Village</Typography>
+      </Box>
+      <Box mx={8}>
+        <Grid container>
+          <Grid item xs={6}>
+            <CardList />
+          </Grid>
+          <Grid item xs={6}>
+            <SmurfForm />
+          </Grid>
+        </Grid>
+      </Box>
+    </Box>
+  )
 }
 
-export default App;
+export default App
